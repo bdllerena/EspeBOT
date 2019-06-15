@@ -23,3 +23,5 @@ fields:
 - type: file
   name: thumb
   label: thumb
+pages:
+- _posts/test.md
