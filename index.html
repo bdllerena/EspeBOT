@@ -1,123 +1,18 @@
+---
+layout: default
+---
 
-<html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-	<meta name="google-site-verification" content="n7zNGtVQwgcjpdxIzHsfvfBatqCigJPFgScCAtIMxNo" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
-    <link rel="manifest" href="manifest.html"/>
-    <meta name="theme-color" content="#000000"/>
-    <title>ESPEBOT</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css"/>
-  </head>
-  <body>
-    <nav class="navbar">
-      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#top_nav" aria-expanded="false"><span class="menu-text">MENU</span><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-      <div class="container">
-        <div class="collapse navbar-collapse" id="top_nav">
-          <ul class="nav nav-justified">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="tutorial.html">TUTORIAL</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="faq.html#email">CONTACTO</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="wrapper">
-      <div class="main container">
-        <div class="row">
-          <div class="col-md-offset-2 col-md-8" id="logo">
-            <h1><a href="index.html"><img class="img-responsive" src="assets/images/logos.png" alt="ESPEBOT"/></a></h1>
-          </div>
-        </div>
-      </div>
-      <div class="main container">
-        <div class="row" style="margin: 40px 0">
-          <div class="col-md-offset-2 col-md-8" id="announcement"><a href="#wa">
-              <h2>VERSIÓN BETA ABIERTA DISPONIBLE <br/><span class='yellow'>SEPTIEMBRE 16</span></h2>
-              <h4 style="margin: 15px 0">Participa ya  &raquo;</h4></a></div>
-        </div>
-        <!--<div class="row">
-          <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/" allowfullscreen="true"></iframe>
-            </div>
-          </div>
-        </div>-->
-      </div>
-      <div class="main container">
-        <div class="row">
-          <div class="col-lg-offset-1 col-lg-10 col-sm-12" id="platforms_container">
-            <h2 style="margin-top: 15px">DISPONIBLE EN</h2>
-            <ul class="nav nav-tabs nav-justified" id="platforms" role="tablist">
-              <li class="active" role="presentation"><a href="#wa"><img class="button-icon" src="assets/images/whatsapp-logo.png"/></a></li>
-              <li role="presentation"><a href="#facebook"><img class="button-icon" src="assets/images/platform-facebook.png"/></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="tab-content main container" id="buy_now" style="margin-bottom: 50px">
-        <div class="tab-pane fade active in" id="wa" role="tabpanel">
-          <div class="row" style="margin: 0">
-            <div class="col-sm-3 se-thumb"><img src="assets/images/combwa.png"/></div>
-              <h5>Agrégame a tus contactos y hazme tus preguntas por WhatsApp</h5>
-              <h5><br>Este es mi número</h5>
-              <br>+593 0986584426
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
-              <h5><br></h5><a class="buy-button soon" href="tutorial.html#wa"><img src="assets/images/HOWITOWRK.png"/></a>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="facebook" role="tabpanel">
-          <div class="row" style="margin: 0">
-              <div class="col-sm-3 se-thumb"><img src="assets/images/combfb.png" style="padding-left: 14px; padding-top: 10px; padding-bottom: 8px;"/></div>
-              <h5>Escríbeme una carta a la dirección <a href="https://fb.me/espepocket">EspePocket</a> con el mensaje</h5>
-              <br>"Quiero ser tester"
-              <h5><br>Acepta tu estado de tester, y preguntame cualquier cosa relacionada a la universidad a través del chat.</h5>
-              <h5><br></h5><a class="buy-button soon" href="tutorial.html#fb"><img src="assets/images/HOWITOWRK.png"/></a>
-            </div>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
       </div>
-    </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="col-xs-offset-1 col-xs-10">
-          <div id="footer-dog"><img src="assets/images/dog.png"/></div><a class="footer-link" href="faq.html">SOPORTE</a><a class="footer-link" href="#"><small>PRIVACIDAD</small></a>
-          <div class="social-icons"><a href="https://www.facebook.com/EspePocket/" alt="Facebook"><img src="assets/images/social-facebook.png"/></a></div>
-        </div>
-      </div>
-    </footer>
-    <script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+593 0986584426", // WhatsApp number
-            call_to_action: "Contacto", // Call to action
-            position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-    <script src="assets/javascripts/jquery.js"></script>
-    <script src="assets/javascripts/bootstrap.js"></script>
-    <script>
-      $('#platforms a').click(function (e) {
-        $('#platforms_container').addClass('active');
-        e.preventDefault();
-        $(this).tab('show');
-      });
-    </script>
-    <!--
-    What are you doing?
-    Looking for secrets?
-    Don't put your nose where it doesn't belong.
-    Or you might learn something you DON'T like...
-    Hee hee hee.
-    -->
-  </body>
-</html>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
