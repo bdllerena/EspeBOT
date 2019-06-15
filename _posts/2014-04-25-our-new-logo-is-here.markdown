@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Our new logo is here"
-date:   2014-04-25 16:54:46
+title: Logo Here
+date: 2014-04-25T16:54:46.000+00:00
 author: Admin
-categories: 
+categories:
 - blog
 - Web-Design
 - Development
 img: post02.jpg
 thumb: thumb02.jpg
----
 
+---
 <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <!--more-->
