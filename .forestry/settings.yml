@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
-  label: Content
+  label: Contenido
 - type: jekyll-posts
   label: Posts
   create: all
