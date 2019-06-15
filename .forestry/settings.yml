@@ -13,6 +13,7 @@ sections:
   label: Posts
   create: all
   templates:
+  - noticia
   - post
 - type: jekyll-pages
   label: Pages
