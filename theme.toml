@@ -1,16 +1,12 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
-name = "Sawmill"
+name = "Kross Hugo"
 license = "MIT"
-licenselink = ""
-description = "A Modular Layout Builder for Hugo and Forestry.io"
-homepage = "https://dwalkr.github.io/sawmill/"
-tags = []
-features = []
-min_version = "0.31.1"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Hugo port of the Themefisher’s Kross Template"
+homepage = "https://themefisher.com/best-hugo-themes/"
+tags = ['landing-page', 'fast', 'light', 'white', 'modern', 'themefisher', 'hugo-theme', 'hugo-templates', 'bootstrap', 'blog', 'responsive', 'clean', 'simple', 'creative', 'contact-form', 'custom-themes', 'mobile', 'minimalistic', 'pages', 'resume', 'portfolio', 'google analytics', 'customizable', 'flexbox', 'presentation', 'product', 'theme', 'typography']
+features = ['bootstrap','responsive']
+min_version = "0.54"
 
 [author]
-  name = "DJ Walker"
-  homepage = "https://github.com/dwalkr"
-
+  name = "Themefisher"
+  homepage = "https://themefisher.com/"
