@@ -1,6 +1,6 @@
 ---
+label: hero-section
 hide_body: true
-is_partial: true
 fields:
 - type: text
   name: heading
